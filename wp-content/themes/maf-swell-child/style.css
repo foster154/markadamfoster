@@ -1,0 +1,230 @@
+/*
+Theme Name: MAF Swell Child
+Theme URI: http://www.swelltheme.com
+Description: Child theme for the Swell Lite Theme
+Author: Mark Foster
+Author URI: http://www.markadamfoster.com/
+Template: swell-lite-master
+Version: 1.0
+*/
+
+@import "../swell-lite-master/style.css";
+
+
+/* ===============================
+  General 
+=============================== */
+
+/* Images */
+
+.img-round {
+	border-radius: 50%;
+}
+
+
+/* ===============================
+  Front Page 
+=============================== */
+
+.fp-content-wrapper {
+	text-align: center;
+}
+
+.fp-buttons-wrapper {
+	margin-top: 30px;
+}
+
+a.fp-button {
+	display: block;
+	float: left;
+	max-width: 400px;
+	width: 46%;
+	height: 230px;
+	margin: 20px 2%;
+	background-size: cover;
+	text-decoration: none;
+	border-radius: 3px;
+}
+
+a.fp-button:hover {
+	max-width: 410px;
+	width: 47%;
+	height: 240px;
+	margin: 15px 1.5%;
+	transition: .2s;
+}
+
+@media (max-width: 767px) {
+
+	a.fp-button {
+		max-width: 100%;
+		width: 100%;
+		height: 280px;
+		margin: 20px 0;
+	}
+
+	a.fp-button:hover {
+		max-width: 100%;
+		width: 100%;
+		margin: 20px 0;
+		height: 280px;
+		transition: .2s;
+}
+
+}
+
+.fp-button > span {
+	display: block;
+	height: 60px;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 3px 3px 0 0;
+	color: #fff;
+	font-size: 1.5em;
+	padding-top: 10px;
+	font-weight: 700;
+}
+
+a.fp-button:hover > span {
+	background-color: rgba(255,255,255,0.1);
+	transition: .2s;
+}
+
+.fp-about {
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(images/about-btn.jpg);
+}
+
+.fp-portfolio {
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(images/portfolio-btn.jpg);
+}
+
+.fp-blog {
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(images/blog-btn.jpg);
+}
+
+.fp-contact {
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(images/contact-btn.jpg);
+}
+
+
+/* ===============================
+  Projects Page 
+=============================== */
+
+.mafportfolio-item {
+	max-width: 45%;
+	float: left;
+	margin: 2.5%;
+}
+
+.mafportfolio-caption {
+	display: block;
+	padding: 24px;
+	background-color: white;
+}
+
+.mafportfolio-description {
+	display: none;
+	position:absolute;
+	max-width: 45%;
+	box-sizing: border-box;
+	padding: 30px;
+	color: black;
+	font-weight: 600;
+	font-size: 1.2em;
+}
+
+.mafportfolio-description span {
+	display: inline-block;
+	margin-top: 15px;
+	font-weight: 400;
+	font-size: .7em;
+}
+
+.mafportfolio-image {
+	max-width: 100%;
+	margin-bottom: -10px;
+}
+
+@media (min-width: 880px) {
+	.mafportfolio-item:hover .mafportfolio-description {
+		display: inline-block;
+		transition: .3s;
+	}
+
+	.mafportfolio-item:hover .mafportfolio-image {
+		opacity: .1;
+		transition: .3s;
+	}
+}
+
+@media (max-width: 767px) {
+	.mafportfolio-item {
+		max-width: 95%;
+	}
+}
+
+/* ===============================
+  Project Single Page 
+=============================== */
+
+.project-screenshot {
+	width: 600px;
+	max-width: 100%;
+	max-height: 400px;
+	overflow: hidden;
+	margin: 20px auto;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+	.project-screenshot {
+		max-height: 200px;
+	}
+}
+
+
+/* ===============================
+  Contact Page 
+=============================== */
+
+.container form input[type='submit'] {
+  margin-top: 0px;
+  padding: 15px 20px;
+  width:100%;
+  max-width: 265px;
+  background: rgba(0,0,0,.6);
+  border: none;
+  border-radius: 5px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: .9em;
+  color: white;
+  cursor: pointer;
+}
+
+.container form input[type='submit']:hover {
+	background: rgba(0,0,0,.7);
+}
