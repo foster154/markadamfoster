@@ -1,0 +1,1 @@
+[18-Dec-2015 22:17:33 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/foster154/public_html/markadamfoster/wp-content/themes/swell-lite-master/index.php on line 10
